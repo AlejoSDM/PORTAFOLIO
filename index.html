@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Portafolio de Alejandro Solano Durán, desarrollador junior en formación en Colombia. Proyectos de desarrollo web, Java, Python y automatización."/>
+<meta name="theme-color" content="#090b10"/>
 <title>Alejandro Solano Durán | Desarrollador Junior</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -37,29 +39,137 @@
 </div>
 
 <!-- HERO -->
-<section id="hero">
-  <canvas id="hero-canvas"></canvas>
-  <div class="hero-content">
-    <p class="hero-greeting">// desarrollador junior en formación</p>
-    <h1 class="hero-name">Hola, soy<br><span>Alejandro Solano.</span></h1>
-    <p class="hero-title">Desarrollador Junior en Formación</p>
-    <p class="hero-sub">
-      <span><span class="dot"></span> Disponible para proyectos</span>
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-ambient" aria-hidden="true"></div>
 
+  <div class="hero-content">
+    <p class="hero-greeting">
+      <span class="status-dot" aria-hidden="true"></span>
+      Disponible para proyectos
     </p>
+
+    <h1 class="hero-name" id="hero-heading">
+      Hola, soy Alejandro.<br>
+      <span>Desarrollo ideas.</span><br>
+      Construyo soluciones.
+    </h1>
+
+    <p class="hero-title">
+      Desarrollador junior en formación, enfocado en desarrollo web,
+      backend y automatización.
+    </p>
+
+    <p class="hero-description">
+      Transformo lo que aprendo en proyectos reales con Java,
+      JavaScript, Spring Boot y herramientas de integración.
+    </p>
+
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">
-        Ver proyectos
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Explorar proyectos
+        <span aria-hidden="true">↗</span>
       </a>
-      <a href="#contact" class="btn-secondary">Contáctame</a>
+
+      <a href="#contact" class="btn-secondary">
+        Hablemos
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="hero-meta">
+      <span><span aria-hidden="true">📍</span> Colombia</span>
+      <a
+        href="https://github.com/AlejoSDM"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="devicon-github-original" aria-hidden="true"></i>
+        GitHub ↗
+      </a>
+      <a
+        href="https://www.linkedin.com/in/alejandro-solano-duran-a95a90406/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="devicon-linkedin-plain" aria-hidden="true"></i>
+        LinkedIn ↗
+      </a>
     </div>
   </div>
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    <span>scroll</span>
+
+  <div class="hero-visual">
+    <div class="visual-orbit" aria-hidden="true"></div>
+
+    <div class="developer-card">
+      <div class="developer-card-top">
+        <div class="window-dots" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span>developer.profile</span>
+        <span class="code-symbol" aria-hidden="true">&lt;/&gt;</span>
+      </div>
+
+      <div class="developer-profile">
+        <img
+          src="asd-logo.svg"
+          alt="Logo ASD de Alejandro Solano Durán"
+          width="64"
+          height="64"
+        >
+        <div>
+          <p>Alejandro Solano</p>
+          <span>Junior Developer</span>
+        </div>
+      </div>
+
+      <pre class="profile-code"><code><span class="syntax-purple">const</span> developer = {
+  name: <span class="syntax-green">"Alejandro"</span>,
+  location: <span class="syntax-green">"Colombia"</span>,
+  stack: [
+    <span class="syntax-green">"JavaScript"</span>,
+    <span class="syntax-green">"Java"</span>,
+    <span class="syntax-green">"Spring Boot"</span>,
+    <span class="syntax-green">"MySQL"</span>
+  ],
+  mindset: <span class="syntax-green">"Aprender y construir"</span>
+};</code></pre>
+
+      <div class="developer-card-bottom">
+        <span class="status-dot" aria-hidden="true"></span>
+        Aprendizaje continuo
+        <span class="terminal-cursor" aria-hidden="true">▍</span>
+      </div>
+    </div>
+
+    <div class="floating-label label-top" aria-hidden="true">
+      <span>✦</span> Código con propósito
+    </div>
+
+    <div class="floating-label label-bottom" aria-hidden="true">
+      <span>↗</span> Ideas → Proyectos
+    </div>
   </div>
+
+  <a href="#about" class="hero-scroll" aria-label="Ir a Sobre mí">
+    <span class="scroll-line" aria-hidden="true"></span>
+    Descubre mi trabajo
+    <span aria-hidden="true">↓</span>
+  </a>
 </section>
+
+<!-- FRANJA CREATIVA -->
+<div class="creative-strip" aria-hidden="true">
+  <div class="creative-strip-inner">
+    <span>IDEAS</span>
+    <span class="strip-star">✳</span>
+    <span>CÓDIGO</span>
+    <span class="strip-star">✳</span>
+    <span>CREATIVIDAD</span>
+    <span class="strip-star">✳</span>
+    <span>SOLUCIONES</span>
+    <span class="strip-star">✳</span>
+  </div>
+</div>
 
 <!-- ABOUT -->
 <section id="about">
@@ -98,54 +208,77 @@
 <!-- SKILLS -->
 <section id="skills">
   <p class="section-label reveal">// habilidades</p>
-  <h2 class="section-title reveal reveal-delay-1">Tecnologías<br>que manejo.</h2>
+  <h2 class="section-title reveal reveal-delay-1">Tecnologías<br>que utilizo.</h2>
   <div class="section-line reveal reveal-delay-2"></div>
-  <div class="skills-sections">
 
-    <div class="skill-category reveal reveal-delay-1">
+  <div class="skills-grid">
+    <article class="skill-category reveal reveal-delay-1">
+      <span class="skill-category-label">Frontend</span>
       <h3>Frontend</h3>
-      <div class="skill-icons">
+      <div class="skill-list">
         <div class="skill-chip"><i class="devicon-html5-plain"></i> HTML5</div>
         <div class="skill-chip"><i class="devicon-css3-plain"></i> CSS3</div>
         <div class="skill-chip"><i class="devicon-javascript-plain"></i> JavaScript</div>
-        <div class="skill-chip"><i class="devicon-chrome-plain"></i> Web Components</div>
-        <div class="skill-chip skill-chip--iconless">Responsive</div>
-        <div class="skill-chip skill-chip--iconless">Flexbox / Grid</div>
-        <div class="skill-chip skill-chip--iconless">CSS Animations</div>
-        <div class="skill-chip skill-chip--iconless">LocalStorage</div>
-      </div>
-    </div>
-
-    <div class="skill-category reveal reveal-delay-2">
-      <h3>Backend &amp; Programación</h3>
-      <div class="skill-icons">
-        <div class="skill-chip"><i class="devicon-python-plain"></i> Python</div>
-        <div class="skill-chip skill-chip--iconless">JSON</div>
+        <div class="skill-chip skill-chip--iconless">Diseño responsive</div>
+        <div class="skill-chip skill-chip--iconless">CSS Grid</div>
+        <div class="skill-chip skill-chip--iconless">Flexbox</div>
+        <div class="skill-chip skill-chip--iconless">DOM</div>
         <div class="skill-chip skill-chip--iconless">Fetch API</div>
-        <div class="skill-chip skill-chip--iconless">Prog. Modular</div>
-        <div class="skill-chip skill-chip--iconless">Lógica de Prog.</div>
       </div>
-    </div>
+    </article>
 
-    <div class="skill-category reveal reveal-delay-3">
+    <article class="skill-category reveal reveal-delay-2">
+      <span class="skill-category-label">Backend &amp; lógica</span>
+      <h3>Backend &amp; programación</h3>
+      <div class="skill-list">
+        <div class="skill-chip"><i class="devicon-java-plain"></i> Java</div>
+        <div class="skill-chip skill-chip--iconless">Spring Boot</div>
+        <div class="skill-chip"><i class="devicon-python-plain"></i> Python</div>
+        <div class="skill-chip skill-chip--iconless">POO</div>
+        <div class="skill-chip skill-chip--iconless">JDBC</div>
+        <div class="skill-chip skill-chip--iconless">Maven</div>
+        <div class="skill-chip skill-chip--iconless">Programación modular</div>
+        <div class="skill-chip skill-chip--iconless">Lógica de programación</div>
+      </div>
+    </article>
+
+    <article class="skill-category reveal reveal-delay-3">
+      <span class="skill-category-label">Datos</span>
       <h3>Bases de datos</h3>
-      <div class="skill-icons">
+      <div class="skill-list">
         <div class="skill-chip"><i class="devicon-mysql-plain"></i> MySQL</div>
-        <div class="skill-chip skill-chip--iconless">Modelo E-R</div>
+        <div class="skill-chip skill-chip--iconless">SQL</div>
+        <div class="skill-chip skill-chip--iconless">Modelado relacional</div>
         <div class="skill-chip skill-chip--iconless">Normalización</div>
+        <div class="skill-chip skill-chip--iconless">Procedimientos almacenados</div>
+        <div class="skill-chip skill-chip--iconless">Transacciones</div>
       </div>
-    </div>
+    </article>
 
-    <div class="skill-category reveal reveal-delay-4">
-      <h3>Herramientas</h3>
-      <div class="skill-icons">
+    <article class="skill-category reveal reveal-delay-4">
+      <span class="skill-category-label">Integración</span>
+      <h3>Automatización e integraciones</h3>
+      <div class="skill-list">
+        <div class="skill-chip skill-chip--iconless">n8n</div>
+        <div class="skill-chip skill-chip--iconless">JavaScript</div>
+        <div class="skill-chip skill-chip--iconless">Webhooks</div>
+        <div class="skill-chip skill-chip--iconless">Telegram Bot API</div>
+        <div class="skill-chip skill-chip--iconless">Google Sheets</div>
+        <div class="skill-chip skill-chip--iconless">Google Drive</div>
+        <div class="skill-chip skill-chip--iconless">JSON</div>
+        <div class="skill-chip skill-chip--iconless">APIs</div>
+      </div>
+    </article>
+
+    <article class="skill-category reveal reveal-delay-5">
+      <span class="skill-category-label">Trabajo</span>
+      <h3>Herramientas y metodologías</h3>
+      <div class="skill-list">
         <div class="skill-chip"><i class="devicon-git-plain"></i> Git</div>
         <div class="skill-chip"><i class="devicon-github-original"></i> GitHub</div>
         <div class="skill-chip skill-chip--iconless">Scrum</div>
-
       </div>
-    </div>
-
+    </article>
   </div>
 </section>
 
@@ -160,34 +293,28 @@
     <div class="project-item reveal reveal-delay-1">
       <div class="project-img">
         <div class="project-img-inner">
-          <img src="Imagenes-proyectos/DELICIAS-DEL-AYER.png" alt="Delicias del Ayer" loading="lazy"/>
+          <img src="Imagenes-proyectos/DB.png" alt="Delivery Bot" loading="lazy"/>
         </div>
       </div>
       <div class="project-info">
         <p class="project-num">// 01</p>
-        <h3 class="project-name">Delicias del Ayer</h3>
-        <p class="project-desc">Sitio web completo para una pastelería tradicional, con diseño emocional enfocado en nostalgia y tradición. Experiencia de usuario moderna con animaciones avanzadas.</p>
+        <h3 class="project-name">Delivery Bot</h3>
+        <p class="project-desc">Automatización de atención al cliente y procesos operativos para delivery con webhooks, integraciones y flujo de mensajes, usando n8n y APIs externas.</p>
         <div class="project-tags">
-          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+          <span class="tag">n8n</span><span class="tag">Webhooks</span><span class="tag">Telegram</span><span class="tag">JSON</span>
         </div>
         <details class="project-features">
           <summary>Ver funcionalidades</summary>
           <ul>
-            <li>Landing Page responsive</li>
-            <li>Catálogo dinámico de productos</li>
-            <li>Buscador de productos</li>
-            <li>Sistema de reseñas</li>
-            <li>Formularios de contacto</li>
-            <li>Integración con WhatsApp e Instagram</li>
-            <li>Animaciones avanzadas</li>
+            <li>Integración con Telegram</li>
+            <li>Webhooks y automatización</li>
+            <li>Google Sheets / Drive</li>
+            <li>Procesamiento de mensajes</li>
+            <li>APIs y flujos operativos</li>
           </ul>
         </details>
         <div class="project-btns">
-          <a href="https://github.com/AlejoSDM/DeliciasDelAyer.git" class="btn-sm filled" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          
+          <a href="https://github.com/AlejoSDM/Proyecto_DeliveryBot." class="btn-sm filled" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
@@ -196,34 +323,28 @@
     <div class="project-item reveal reveal-delay-2">
       <div class="project-img">
         <div class="project-img-inner">
-          <img src="Imagenes-proyectos/RUTAS-SEGURAS.png" alt="Rutas Seguras Kids" loading="lazy"/>
+          <img src="Imagenes-proyectos/Tecstore.png" alt="TecStore" loading="lazy"/>
         </div>
       </div>
       <div class="project-info">
         <p class="project-num">// 02</p>
-        <h3 class="project-name">Rutas Seguras Kids</h3>
-        <p class="project-desc">Sistema de gestión de rutas escolares con módulos completos de estudiantes, conductores y asignaciones. Integra clima en tiempo real y Web Components con Shadow DOM.</p>
+        <h3 class="project-name">TecStore</h3>
+        <p class="project-desc">Proyecto académico con Java, lógica de programación y conexión a bases de datos mediante JDBC, Maven y MySQL.</p>
         <div class="project-tags">
-          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Fetch API</span><span class="tag">OpenWeather</span>
+          <span class="tag">Java</span><span class="tag">JDBC</span><span class="tag">Maven</span><span class="tag">MySQL</span>
         </div>
         <details class="project-features">
           <summary>Ver funcionalidades</summary>
           <ul>
-            <li>Gestión de estudiantes y rutas</li>
-            <li>Asignación de conductores</li>
-            <li>API OpenWeatherMap integrada</li>
-            <li>Persistencia con LocalStorage</li>
-            <li>Web Components + Shadow DOM</li>
-            <li>Formularios dinámicos</li>
-            <li>Responsive Design</li>
+            <li>POO y estructuras</li>
+            <li>Conexión con base de datos</li>
+            <li>JDBC</li>
+            <li>Gestión y persistencia</li>
+            <li>Logica aplicada</li>
           </ul>
         </details>
         <div class="project-btns">
-          <a href="https://github.com/AlejoSDM/RUTAS-SEGURAS-KIDS.git" class="btn-sm filled" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          
+          <a href="https://github.com/AlejoSDM/JAVA-PROJECT" class="btn-sm filled" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </div>
@@ -232,33 +353,28 @@
     <div class="project-item reveal reveal-delay-3">
       <div class="project-img">
         <div class="project-img-inner">
-          <img src="Imagenes-proyectos/HUELLITAS-DEL-AMOR.png" alt="Huellitas de Amor" loading="lazy"/>
+          <img src="Imagenes-proyectos/RUTAS-SEGURAS.png" alt="Rutas Seguras Kids" loading="lazy"/>
         </div>
       </div>
       <div class="project-info">
         <p class="project-num">// 03</p>
-        <h3 class="project-name">Huellitas de Amor</h3>
-        <p class="project-desc">Sitio web multipágina para fundación animalista, orientado a adopción y voluntariado. Diseño con carrusel automático, SVG decorativos y animaciones CSS.</p>
+        <h3 class="project-name">Rutas Seguras Kids</h3>
+        <p class="project-desc">Sistema de gestión para rutas escolares con HTML, CSS, JavaScript, fetch y almacenamiento local para manejo de conductores, estudiantes y rutas.</p>
         <div class="project-tags">
-          <span class="tag">HTML5</span><span class="tag">CSS3</span>
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Fetch API</span>
         </div>
         <details class="project-features">
           <summary>Ver funcionalidades</summary>
           <ul>
-            <li>Diseño multipágina</li>
-            <li>Carrusel automático</li>
-            <li>Responsive Design</li>
-            <li>Formularios de adopción</li>
-            <li>Animaciones CSS</li>
-            <li>SVG decorativos</li>
+            <li>Gestión de estudiantes</li>
+            <li>Asignación de rutas</li>
+            <li>Persistencia local</li>
+            <li>Formulario dinámico</li>
+            <li>Diseño responsive</li>
           </ul>
         </details>
         <div class="project-btns">
-          <a href="https://github.com/AlejoSDM/Fundacion-Huellitas-de-amor.git" class="btn-sm filled" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          
+          <a href="https://github.com/AlejoSDM/RUTAS-SEGURAS-KIDS" class="btn-sm filled" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
@@ -267,34 +383,88 @@
     <div class="project-item reveal reveal-delay-4">
       <div class="project-img">
         <div class="project-img-inner">
-          <img src="Imagenes-proyectos/GESTION-HERRAMIENTAS.png" alt="Gestión Comunitaria de Herramientas" loading="lazy"/>
+          <img src="Imagenes-proyectos/HUELLITAS-DEL-AMOR.png" alt="Huellitas de Amor" loading="lazy"/>
         </div>
       </div>
       <div class="project-info">
         <p class="project-num">// 04</p>
-        <h3 class="project-name">Gestión Comunitaria de Herramientas</h3>
-        <p class="project-desc">Aplicación Python para gestionar préstamos de herramientas en una comunidad. Arquitectura modular con persistencia en JSON, reportes y logs del sistema.</p>
+        <h3 class="project-name">Huellitas de Amor</h3>
+        <p class="project-desc">Landing page y sitio web informativo para una fundación animalista, con diseño responsivo y estructura multi-página en HTML y CSS.</p>
         <div class="project-tags">
-          <span class="tag">Python</span><span class="tag">JSON</span>
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive</span>
+        </div>
+        <details class="project-features">
+          <summary>Ver funcionalidades</summary>
+          <ul>
+            <li>Diseño multi-página</li>
+            <li>Responsive</li>
+            <li>Secciones informativas</li>
+            <li>Animaciones CSS</li>
+            <li>Adopción y voluntariado</li>
+          </ul>
+        </details>
+        <div class="project-btns">
+          <a href="https://github.com/AlejoSDM/Fundacion-Huellitas-de-amor" class="btn-sm filled" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="project-item reveal reveal-delay-5">
+      <div class="project-img">
+        <div class="project-img-inner">
+          <img src="Imagenes-proyectos/GESTION-HERRAMIENTAS.png" alt="Gestión de Herramientas" loading="lazy"/>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-num">// 05</p>
+        <h3 class="project-name">Gestión Herramientas</h3>
+        <p class="project-desc">Aplicación Python para gestionar préstamos y registros de herramientas con persistencia en JSON y lógica modular.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">JSON</span><span class="tag">CRUD</span>
         </div>
         <details class="project-features">
           <summary>Ver funcionalidades</summary>
           <ul>
             <li>Gestión de usuarios</li>
-            <li>Gestión de herramientas</li>
-            <li>Gestión de préstamos</li>
-            <li>Sistema de reportes</li>
-            <li>Logs del sistema</li>
-            <li>Persistencia con JSON</li>
-            <li>Programación modular</li>
+            <li>Préstamos y herramientas</li>
+            <li>Persistencia en JSON</li>
+            <li>Lógica modular</li>
+            <li>Reportes básicos</li>
           </ul>
         </details>
         <div class="project-btns">
-          <a href="https://github.com/AlejoSDM/GestionHerramientas.git" class="btn-sm filled" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          
+          <a href="https://github.com/AlejoSDM/GestionHerramientas-PYTHON" class="btn-sm filled" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- P6 -->
+    <div class="project-item reveal reveal-delay-6">
+      <div class="project-img">
+        <div class="project-img-inner">
+          <img src="Imagenes-proyectos/DELICIAS-DEL-AYER.png" alt="Delicias del Ayer" loading="lazy"/>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-num">// 06</p>
+        <h3 class="project-name">Delicias del Ayer</h3>
+        <p class="project-desc">Proyecto web de pastelería con diseño visual atractivo, HTML, CSS y JavaScript para mostrar catálogo y experiencia de cliente.</p>
+        <div class="project-tags">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+        </div>
+        <details class="project-features">
+          <summary>Ver funcionalidades</summary>
+          <ul>
+            <li>Landing page</li>
+            <li>Catálogo y buscador</li>
+            <li>Diseño visual atractivo</li>
+            <li>Responsive</li>
+            <li>Formulario y contacto</li>
+          </ul>
+        </details>
+        <div class="project-btns">
+          <a href="https://github.com/AlejoSDM/DeliciasDelAyer" class="btn-sm filled" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
@@ -302,64 +472,83 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-grid">
-    <div class="contact-info">
-      <p class="section-label reveal">// contacto</p>
-      <h2 class="section-title reveal reveal-delay-1">¿Hablamos?</h2>
-      <div class="section-line reveal reveal-delay-2"></div>
-      <p class="reveal reveal-delay-3">¿Tienes un proyecto en mente o quieres colaborar? Escríbeme y te respondo lo antes posible.</p>
-      <div class="contact-items reveal reveal-delay-4">
-        <div class="contact-item">
-          <div class="ci-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <span class="ci-label">Correo</span>
-            <span class="ci-value">alejosdml@gmail.com</span>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="ci-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.21-1.21a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </div>
-          <div>
-            <span class="ci-label">Teléfono</span>
-            <span class="ci-value">+57 322 876 1358</span>
-          </div>
-        </div>
-        <a href="https://github.com/AlejoSDM" target="_blank" rel="noopener" class="contact-item">
-          <div class="ci-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          </div>
-          <div>
-            <span class="ci-label">GitHub</span>
-            <span class="ci-value">@AlejoSDM</span>
-          </div>
-        </a>
-        
+<!-- CONTACTO DIRECTO -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="contact-stage">
+    <div class="contact-orb" aria-hidden="true"></div>
+    <div class="contact-intro">
+      <p class="section-label reveal">// conectemos</p>
+      <div class="contact-availability reveal">
+        <span class="status-dot" aria-hidden="true"></span>
+        Disponible para proyectos
       </div>
+      <h2 id="contact-title" class="contact-heading reveal">
+        Las buenas ideas<br>
+        empiezan con un <span>hola.</span>
+      </h2>
+      <p class="contact-description reveal">
+        &iquest;Buscas un desarrollador junior para tu equipo o tienes un
+        proyecto en mente? Me gustar&iacute;a conocerlo.
+      </p>
+      <div class="contact-main-link contact-main-link--static reveal" aria-disabled="true">
+        Hablemos de tu pr&oacute;ximo proyecto
+        <span aria-hidden="true">&#8599;</span>
+      </div>
+      <p class="contact-small-note reveal">
+        Sin formularios. Puedes contactarme directamente.
+      </p>
     </div>
-    <form class="contact-form reveal reveal-delay-3" id="contactForm" novalidate>
-      <div class="form-group" id="grp-name">
-        <label for="fname">Nombre</label>
-        <input type="text" id="fname" placeholder="Tu nombre completo"/>
-        <span class="form-error">Por favor ingresa tu nombre.</span>
+    <div class="contact-cards">
+      <div class="direct-contact-card direct-contact-card--static reveal" aria-disabled="true">
+        <span class="direct-contact-icon icon-mail" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="3"/>
+            <path d="m3 7 9 6 9-6"/>
+          </svg>
+        </span>
+        <span class="direct-contact-body">
+          <span class="direct-contact-label">Escr&iacute;beme</span>
+          <span class="direct-contact-value">alejosdml@gmail.com</span>
+          <span class="direct-contact-hint">Abrir correo</span>
+        </span>
+        <span class="contact-arrow" aria-hidden="true">&#8599;</span>
       </div>
-      <div class="form-group" id="grp-email">
-        <label for="femail">Correo</label>
-        <input type="email" id="femail" placeholder="tu@correo.com"/>
-        <span class="form-error">Por favor ingresa un correo válido.</span>
-      </div>
-      <div class="form-group" id="grp-msg">
-        <label for="fmsg">Mensaje</label>
-        <textarea id="fmsg" placeholder="¿En qué puedo ayudarte?"></textarea>
-        <span class="form-error">Por favor escribe un mensaje.</span>
-      </div>
-      <button type="submit" class="btn-submit">Enviar mensaje</button>
-      <div class="form-success" id="formSuccess">✅ ¡Mensaje enviado! Te responderé pronto.</div>
-    </form>
+      <a href="https://www.linkedin.com/in/alejandro-solano-duran-a95a90406/" target="_blank" rel="noopener noreferrer" class="direct-contact-card reveal">
+        <span class="direct-contact-icon icon-linkedin" aria-hidden="true">
+          <i class="devicon-linkedin-plain"></i>
+        </span>
+        <span class="direct-contact-body">
+          <span class="direct-contact-label">Conectemos</span>
+          <span class="direct-contact-value">Alejandro Solano Dur&aacute;n</span>
+          <span class="direct-contact-hint">Ver mi LinkedIn</span>
+        </span>
+        <span class="contact-arrow" aria-hidden="true">&#8599;</span>
+      </a>
+      <a href="https://github.com/AlejoSDM" target="_blank" rel="noopener noreferrer" class="direct-contact-card reveal">
+        <span class="direct-contact-icon icon-github" aria-hidden="true">
+          <i class="devicon-github-original"></i>
+        </span>
+        <span class="direct-contact-body">
+          <span class="direct-contact-label">Explora mi c&oacute;digo</span>
+          <span class="direct-contact-value">@AlejoSDM</span>
+          <span class="direct-contact-hint">Ver repositorios</span>
+        </span>
+        <span class="contact-arrow" aria-hidden="true">&#8599;</span>
+      </a>
+      <a href="tel:+573228761358" class="direct-contact-card reveal">
+        <span class="direct-contact-icon icon-phone" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </span>
+        <span class="direct-contact-body">
+          <span class="direct-contact-label">Contacto directo</span>
+          <span class="direct-contact-value">+57 322 876 1358</span>
+          <span class="direct-contact-hint">Llamar</span>
+        </span>
+        <span class="contact-arrow" aria-hidden="true">&#8599;</span>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -383,10 +572,11 @@
     <div class="footer-col">
       <h4>Proyectos</h4>
       <ul>
-        <li><a href="#">Delicias del Ayer</a></li>
-        <li><a href="#">Rutas Seguras Kids</a></li>
-        <li><a href="#">Huellitas de Amor</a></li>
-        <li><a href="#">Gestión Herramientas</a></li>
+        <li><a href="https://github.com/AlejoSDM/JAVA-PROJECT" target="_blank" rel="noopener noreferrer">TecStore</a></li>
+        <li><a href="https://github.com/AlejoSDM/DeliciasDelAyer" target="_blank" rel="noopener">Delicias del Ayer</a></li>
+        <li><a href="https://github.com/AlejoSDM/RUTAS-SEGURAS-KIDS" target="_blank" rel="noopener">Rutas Seguras Kids</a></li>
+        <li><a href="https://github.com/AlejoSDM/Fundacion-Huellitas-de-amor" target="_blank" rel="noopener">Huellitas de Amor</a></li>
+        <li><a href="#projects">Gestión Herramientas</a></li>
       </ul>
     </div>
   </div>
@@ -395,6 +585,9 @@
     <div class="footer-socials">
       <a href="https://github.com/AlejoSDM" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/alejandro-solano-duran-a95a90406/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn de Alejandro Solano Dur&#225;n">
+        <i class="devicon-linkedin-plain" aria-hidden="true"></i>
       </a>
       <a href="mailto:alejosdml@gmail.com" class="social-btn" aria-label="Email">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
